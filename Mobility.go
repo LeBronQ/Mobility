@@ -51,6 +51,6 @@ func (n *Node) doWalk() {
 	n.Time -= 1
 }
 
-func UpdatePosition(n Node) {
+func UpdatePosition(n *Node) {
 	n.doWalk()
 }
