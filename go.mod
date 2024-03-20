@@ -1,4 +1,4 @@
-module Mobility
+module github.com/LeBronQ/Mobility
 
 go 1.22.1
 
