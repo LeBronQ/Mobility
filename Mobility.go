@@ -36,7 +36,6 @@ func (n *Node) doWalk() {
 		case "RandomWalk":
 			n.V = InitRandomWalk(n.Param)
 			n.Time = TimeStep / TimeSlot
-			return
 		case "RandomWayPoint":
 		case "GaussMarkov":
 		default:
