@@ -28,7 +28,7 @@ type Node struct {
 	Param interface{}
 }
 
-var box = NewBox(0, 400, 0, 400, 0, 400)
+var Nbox = NewBox(0, 400, 0, 400, 0, 400)
 
 func (n *Node) doWalk() {
 	if n.Time == 0 {
@@ -46,7 +46,7 @@ func (n *Node) doWalk() {
 	newPos.X = n.Pos.X + n.V.X*TimeSlot
 	newPos.Y = n.Pos.Y + n.V.Y*TimeSlot
 	newPos.Z = n.Pos.Z + n.V.Z*TimeSlot
-	n.Pos, n.V = box.BoundProcess(newPos, n.V, n.Pos)
+	n.Pos, n.V = Nbox.BoundProcess(newPos, n.V, n.Pos)
 	n.Time -= 1
 }
 
