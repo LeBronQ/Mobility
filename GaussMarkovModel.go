@@ -12,7 +12,7 @@ func GaussMarkov3D(iteration int64, variance float64, alpha float64, lSpeed floa
 	newPos.X = pos.X + lastSpeed.X*TimeStep
 	newPos.Y = pos.Y + lastSpeed.Y*TimeStep
 	newPos.Z = pos.Z + lastSpeed.Z*TimeStep
-	newPos, _ = box.BoundProcess(newPos, lastSpeed, pos)
+	newPos, _ = Nbox.BoundProcess(newPos, lastSpeed, pos)
 
 	speedVar := distuv.Normal{Mu: 0, Sigma: variance * variance}.Rand()
 	dirVar := distuv.Normal{Mu: 0, Sigma: variance * variance}.Rand()
