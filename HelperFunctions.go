@@ -15,7 +15,7 @@ func RandomSpeed(min, max float64) float64 {
 	rand.Seed(time.Now().UnixNano())
 	return min + rand.Float64()*(max-min)
 }
-func calculateDistance3D(src Position, dst Position) float64 {
+func CalculateDistance3D(src Position, dst Position) float64 {
 	dx := dst.X - src.X
 	dy := dst.Y - src.Y
 	dz := dst.Z - src.Z
