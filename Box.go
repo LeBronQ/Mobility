@@ -94,6 +94,6 @@ func (box *Box) RandomPosition3D() Position {
 	var newPosition Position
 	newPosition.X = box.xMin + rand.Float64()*(box.xMax-box.xMin)
 	newPosition.Y = box.yMin + rand.Float64()*(box.yMax-box.yMin)
-	newPosition.X = box.zMin + rand.Float64()*(box.zMax-box.zMin)
+	newPosition.Z = box.zMin + rand.Float64()*(box.zMax-box.zMin)
 	return newPosition
 }
