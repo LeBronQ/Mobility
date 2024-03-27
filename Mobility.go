@@ -28,7 +28,7 @@ type Node struct {
 	Param interface{}
 }
 
-var Nbox = NewBox(0, 400, 0, 400, 0, 400)
+var Nbox = NewBox(0, 4000, 0, 4000, 0, 4000)
 
 func (n *Node) doWalk() {
 	if n.Time == 0 {

@@ -15,7 +15,7 @@ var arr []*Node
 
 func GenerateNodes() {
 	for i := 1; i <= n; i++ {
-		pos := box.RandomPosition3D()
+		pos := Nbox.RandomPosition3D()
 		angle1 := RandomAngle()
 		angle2 := RandomAngle()
 		s := RandomSpeed(minSpeed, maxSpeed)
