@@ -48,5 +48,6 @@ func UpdatePosition(n Node) Node {
 	newPos.Z = n.Pos.Z + n.V.Z*TimeSlot
 	n.Pos, n.V = Nbox.BoundProcess(newPos, n.V, n.Pos)
 	n.Time -= 1
+	fmt.Printf("time:%d", n.Time)
 	return n
 }
