@@ -30,7 +30,7 @@ type Node struct {
 
 var Nbox = NewBox(0, 4000, 0, 4000, 0, 4000)
 
-func (n *Node) doWalk() {
+func (n Node) doWalk() {
 	if n.Time == 0 {
 		switch n.Model {
 		case "RandomWalk":
@@ -50,6 +50,7 @@ func (n *Node) doWalk() {
 	n.Time -= 1
 }
 
-func UpdatePosition(n *Node) {
+func UpdatePosition(n Node) Node {
 	n.doWalk()
+	return n
 }
